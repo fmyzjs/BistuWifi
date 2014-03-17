@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BistuWifi</string>
+    <string name="action_settings">Settings</string>
+	<string name="Description">：BistuWifi 是用于北京信息科技大学校园wifi的安卓登陆客户端。讨厌网页登陆的同学再也不用为此而抓狂咯，方便各位同学日常使用。</string>
+
+</resources>

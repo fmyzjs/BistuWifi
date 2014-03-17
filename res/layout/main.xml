@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_logo2"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:background="@drawable/login_input"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editTextAccount"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#00ffffff"
+                android:hint="请输入用户名"
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+<!--  
+            <Button
+                android:id="@+id/btn_more_pop"
+                android:layout_width="10dp"
+                android:layout_height="8dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_input_arrow" />
+-->
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/divider_horizontal_line" />
+
+        <EditText
+            android:id="@+id/editTextPsw"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#00ffffff"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout01"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_button_select"
+        android:text="登陆" />
+
+    <ImageView
+        android:id="@+id/image_logo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/login_pic2" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonLogin"
+        android:layout_below="@+id/buttonLogin" >
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_alignTop="@+id/relativeLayout1"
+        android:background="@null"
+        android:button="@null"
+        android:checked="true"
+        android:drawableLeft="@drawable/checkbox_bg"
+        android:paddingTop="4dp"
+        android:text="记住密码"
+        android:textSize="16sp" />
+
+</RelativeLayout>
